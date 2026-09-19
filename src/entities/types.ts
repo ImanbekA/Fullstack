@@ -3,7 +3,7 @@ export interface User {
     email: string;
     nickname: string;
     phone: string;
-    RegistrationDate: string;
+    registrationDate: string;
 }
 
 export interface Photo {
