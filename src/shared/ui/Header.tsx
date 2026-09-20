@@ -1,7 +1,13 @@
-    import { NavLink } from 'react-router-dom';
+    import { NavLink, useLocation } from 'react-router-dom';
     import { AppBar, Toolbar, Button, Box } from '@mui/material';
 
     export function Header() {
+          const location = useLocation();
+          const privatePaths = ['/profile', '/assessment', '/history'];
+          if (!privatePaths.includes(location.pathname)) {
+            return null;
+}
+
     return (
         <AppBar position="static">
         <Toolbar>

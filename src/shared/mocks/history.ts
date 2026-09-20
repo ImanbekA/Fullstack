@@ -1,0 +1,43 @@
+import type { Assessment } from '../../entities/types';
+
+export const mockAssessments: Assessment[] = [
+  {
+    id: 1,
+    userId: 1,
+    brand: 'Toyota',
+    model: 'Camry',
+    year: 2018,
+    photos: [],
+    damages: [],
+    cost: 26000,
+    AssessmentDate: '2025-03-15',
+    status: 'completed' as any,
+    confirmed: true,
+  },
+  {
+    id: 2,
+    userId: 1,
+    brand: 'BMW',
+    model: 'X5',
+    year: 2020,
+    photos: [],
+    damages: [],
+    cost: 45000,
+    AssessmentDate: '2025-03-20',
+    status: 'completed' as any,
+    confirmed: false,
+  },
+  {
+    id: 3,
+    userId: 1,
+    brand: 'Kia',
+    model: 'Rio',
+    year: 2015,
+    photos: [],
+    damages: [],
+    cost: 12000,
+    AssessmentDate: '2025-04-01',
+    status: 'completed' as any,
+    confirmed: true,
+  },
+];
