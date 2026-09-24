@@ -1,75 +1,14 @@
-# React + TypeScript + Vite
+Проект по теме: Оценка повреждений подержанных автомобилей: определение характера и степени повреждений по фотографиям.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Описание проекта:
+Назначение приложения: CDA (Car Damage Assessment) - веб приложение для оценки кузовных повреждений легковых автомобилей по фотографиям
 
-Currently, two official plugins are available:
+Пользовательские сценарии: 
+1. Регистрация или вход (по email и паролю)
+2. После входа пользователь видит 3 вкладки: 
+	1.Личный кабинет (В личном кабинете можно увидеть свои данные: номер, email. Также будет кнопка "выход из профиля")
+	2.Оценка повреждений (В этом разделе пользователь должен указать марку, модель и год авто затем загрузить фотографии повреждения, после чего выйдет оценка повреждения где приложение покажет характер и степень повреждения а также примерную стоимость ремонта)
+	3.История оценок (В этом разделе пользователь будет видеть всю историю его проведенных оценок)	
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+Инструкция запуска: В терминале переходим в папку CDA и вводим команду npm run dev, после чего в браузере вводим http://localhost:5173/
