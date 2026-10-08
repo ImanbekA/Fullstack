@@ -1,4 +1,4 @@
-import type { Assessment } from '../../entities/types';
+import type { Assessment } from '../entities/types';
 
 export const mockAssessments: Assessment[] = [
   {
@@ -9,8 +9,8 @@ export const mockAssessments: Assessment[] = [
     year: 2018,
     photos: [],
     damages: [],
-    cost: 26000,
-    AssessmentDate: '2025-03-15',
+    cost: 260000,
+    AssessmentDate: '2024-03-15',
     status: 'completed' as any,
     confirmed: true,
   },
@@ -18,12 +18,12 @@ export const mockAssessments: Assessment[] = [
     id: 2,
     userId: 1,
     brand: 'BMW',
-    model: 'X5',
+    model: 'M5',
     year: 2020,
     photos: [],
     damages: [],
-    cost: 45000,
-    AssessmentDate: '2025-03-20',
+    cost: 685000,
+    AssessmentDate: '2026-03-20',
     status: 'completed' as any,
     confirmed: false,
   },

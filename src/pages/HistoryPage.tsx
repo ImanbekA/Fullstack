@@ -1,5 +1,5 @@
 import { Container, Typography, Card, CardContent, Stack, Box, Chip } from '@mui/material';
-import { mockAssessments } from '../shared/mocks/history';
+import { mockAssessments } from '../mocks/history';
 
 export function HistoryPage() {
   return (

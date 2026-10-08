@@ -1,4 +1,4 @@
-import type { User } from "../../entities/types";
+import type { User } from "../entities/types";
 export const MockUser: User = {
     id: 1,
     email: "sobachka@mail.com",

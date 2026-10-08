@@ -3,7 +3,7 @@ import {
   Container, Typography, Card, CardContent, Box,
   TextField, MenuItem, Button, Stack,
 } from '@mui/material';
-import { carBrands, type CarBrand } from '../shared/mocks/cars';
+import { carBrands, type CarBrand } from '../mocks/cars';
 
 export function AssessmentPage() {
   const [brand, setBrand] = useState<CarBrand | ''>('');

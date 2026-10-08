@@ -1,5 +1,5 @@
 import { Container, Typography, Card, CardContent, Box } from "@mui/material"
-import { MockUser } from "../shared/mocks/user"
+import { MockUser } from "../mocks/user"
 
 <Container maxWidth="md">
     <Box sx={{ mt: 4 }}>
