@@ -1,0 +1,10 @@
+[33m674f30c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m refactor: simplify structure, add backend skeleton
+[33m3415b53[m[33m ([m[1;31morigin/main[m[33m)[m docs: update README with project description
+[33m5b9baf4[m feat: implement Profile, History pages and refine navigation
+[33mc2df709[m feat: implement AssessmentPage with dependent selects
+[33m6e407b7[m feat: restyle ProfilePage with MUI components
+[33m2a1fcb3[m .
+[33m4fcb1dc[m feat: add Header with navigation links
+[33me61f8f1[m feat: layout of main screens and routing
+[33mffb9846[m feat: add types and enums
+[33m3d33305[m chore: init vite react-ts project
