@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 
+from app.models import User, Assessment, Photo, Damage  # noqa: F401
+
 app = FastAPI()
 
 
