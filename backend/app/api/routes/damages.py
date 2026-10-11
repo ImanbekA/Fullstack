@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 
-from app.api.deps import get_db
+from app.db.database import get_db
 from app.crud import damage as damage_crud
 from app.schemas.damage import DamageCreate, DamageRead, DamageUpdate
 
