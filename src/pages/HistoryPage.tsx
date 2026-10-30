@@ -1,5 +1,5 @@
 import { Container, Typography, Card, CardContent, Stack, Box, Chip } from '@mui/material';
-import { mockAssessments } from '../mocks/history';
+import { mockAssessments } from '../shared/mocks/history';
 
 export function HistoryPage() {
   return (
@@ -25,7 +25,7 @@ export function HistoryPage() {
                 </Stack>
 
                 <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-                  Дата: {a.AssessmentDate}
+                  Дата: {a.assessmentDate}
                 </Typography>
 
                 <Typography variant="body1" sx={{ mt: 1 }}>

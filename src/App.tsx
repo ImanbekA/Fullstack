@@ -5,7 +5,7 @@ import { ProfilePage } from "./pages/ProfilePage";
 import { AssessmentPage } from "./pages/AssessmentPage";
 import { HistoryPage } from "./pages/HistoryPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
-import { Header } from "./Header";
+import { Header } from './shared/ui/Header';
 
 function  App() {
   return (
