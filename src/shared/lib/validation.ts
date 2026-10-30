@@ -31,3 +31,17 @@ export const loginSchema = z.object({
 });
 
 export type LoginFormData = z.infer<typeof loginSchema>;
+export const assessmentSchema = z.object({
+  brand: z
+    .string()
+    .min(1, "Выберите марку"),
+  model: z
+    .string()
+    .min(1, "Выберите модель"),
+  year: z
+    .number({ error: "Введите год" })
+    .min(1990, "Год не может быть меньше 1990")
+    .max(new Date().getFullYear(), `Год не может быть больше ${new Date().getFullYear()}`),
+});
+
+export type AssessmentFormData = z.infer<typeof assessmentSchema>;
